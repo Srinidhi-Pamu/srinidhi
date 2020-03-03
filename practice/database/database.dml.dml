@@ -1,0 +1,16 @@
+--change this to your team id
+use MLP203;
+
+INSERT INTO employees VALUES ('Anwesha','Pradhan','50973','HR','Anwesha@gmail.com','9900923456'),('Srinidhi','Pamu','50972','Account','Srinidhi@gmail.com','9911923456'),('Pratham','Sharma','50103','Developer','Pratham@gmail.com','9900513456'),('Utam','Naga sei','50102','Testing','Utam@gmail.com','9340923456'),('Pooja','Senthil','50115','Finance','Pooja@gmail.com','9617823456');
+insert into employees values('Dawar','Pratim','47834','Testing','dawarpratim@gmail.com','9856278913');
+
+insert into leaves values(99,'2019-10-23','2019-10-28',6,'2019-10-15 16:15:00','pending','email',47834),
+                         (77,'2019-05-15','2019-05-20',6,'2019-04-25 15:30:00','approved','text_message',50102),
+                         (55,'2020-01-10','2020-01-12',3,'2020-01-02 09:45:00','denied','outlook',50103),
+                         (44,'2020-02-01','2020-02-10',8,'2020-02-01 12:10:00','approved','email',50115),
+                         (33,'2020-01-15','2020-01-20',6,'2020-01-01 10:20:00','denied','outlook',50972);
+insert into leaves values(22,'2020-02-10','2020-02-15',6,'2020-01-02 09:45:00','denied','outlook',50973);
+
+
+
+

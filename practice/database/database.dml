@@ -1,0 +1,43 @@
+use MLP203;
+
+
+INSERT INTO employees VALUES ('Anwesha','Pradhan','50973','HR','Anwesha@gmail.com','9900923456'),('Srinidhi','Pamu','50972','Account','Srinidhi@gmail.com','9911923456'),('Pratham','Sharma','50103','Developer','Pratham@gmail.com','9900513456'),('Utam','Naga sei','50102','Testing','Utam@gmail.com','9340923456'),('Pooja','Senthil','50115','Finance','Pooja@gmail.com','9617823456');
+insert into employees values('Dawar','Pratim','47834','Testing','dawarpratim@gmail.com','9856278913');
+
+insert into leaves values(99,'2019-10-23','2019-10-28',6,'2019-10-15 16:15:00','pending','email',47834),
+                         (77,'2019-05-15','2019-05-20',6,'2019-04-25 15:30:00','approved','text_message',50102),
+                         (55,'2020-01-10','2020-01-12',3,'2020-01-02 09:45:00','denied','outlook',50103),
+                         (44,'2020-02-01','2020-02-10',8,'2020-02-01 12:10:00','approved','email',50115),
+                         (33,'2020-01-15','2020-01-20',6,'2020-01-01 10:20:00','denied','outlook',50972);
+insert into leaves values(22,'2020-02-10','2020-02-15',6,'2020-01-02 09:45:00','denied','outlook',50973);
+
+alter table employee add column(EMP_name varchar(30), EMP_gender varchar(30));
+desc employee;
+update employee
+set EMP_name = 'uttam',
+    EMP_gender='m'
+    where EMP_ID=1000;
+    update employee
+set EMP_name = 'pooja',
+    EMP_gender='f'
+    where EMP_ID=2000;
+    update employee
+set EMP_name = 'pratham',
+    EMP_gender='m'
+    where EMP_ID=2001;
+    update employee
+set EMP_name = 'sreenidhi',
+    EMP_gender='f'
+    where EMP_ID=3000;
+    update employee
+set EMP_name = 'anwesha',
+    EMP_gender='F'
+    where EMP_ID=3001;
+    select *from employee;
+    delete from employee where EMP_ID=3001 ;
+    
+--Update an Employee
+UPDATE EMPLOYEE SET DEPT='MARKETING' WHERE EMP_ID=2001;
+UPDATE EMPLOYEE SET DEPT='FINANCE' WHERE EMP_ID=3000;
+UPDATE EMPLOYEE SET DEPT='HR' WHERE EMP_ID=3001;
+UPDATE EMPLOYEE SET DEPT = 'SALES' WHERE EMP_ID =2000;
