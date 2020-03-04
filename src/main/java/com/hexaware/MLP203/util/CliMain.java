@@ -2,7 +2,6 @@ package com.hexaware.MLP203.util;
 
 import java.util.Scanner;
 
-import com.google.protobuf.TextFormat.ParseException;
 import com.hexaware.MLP203.model.Employee;
 import com.hexaware.MLP203.model.Leave;
 

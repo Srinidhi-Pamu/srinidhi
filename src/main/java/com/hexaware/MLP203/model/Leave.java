@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 import com.hexaware.MLP203.persistence.DbConnection;
-import com.hexaware.MLP203.persistence.EmployeeDAO;
-import com.hexaware.MLP203.persistence.LeaveDao;
+import com.hexaware.MLP203.persistence.LeaveDAO;
 
 public class Leave{
      private int leave_id;
@@ -128,9 +127,9 @@ public class Leave{
     }
 
     //Dao for leave
-    private static LeaveDao dao(){
+    private static LeaveDAO dao(){
         DbConnection db=new DbConnection();
-        return db.getConnect().onDemand(LeaveDao.class);
+        return db.getConnect().onDemand(LeaveDAO.class);
     }
 
     public static Leave listById(final int leave_id){
@@ -138,7 +137,7 @@ public class Leave{
     }
     
     public static Leave[] leaveHistory(final int empId){
-        List<LeaveDao> es = dao().leaveHistory(empId);
+        List<LeaveDAO> es = dao().leaveHistory(empId);
         return es.toArray(new Leave[es.size()]);
     }
 
