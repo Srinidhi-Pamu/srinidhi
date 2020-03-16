@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+    var fName, lName;
+    fName= document.getElementById("FirstName").value;
+    lName= document.getElementById("LastName").value;
+    document.getElementById("PrintHere").innerHTML='Hi'+fName+''+lName;
+
+    
+    </script>
+
+</head>
+
+<body bgcolor="azure">
+    <center>
+        <form action=#>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <table border="2">
+                    <tbody>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" id="FirstName"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td><input type="text" id="LastName"></td>
+                        </tr>
+                        <tr>
+                            <td>Area of Expertise:</td>
+                            <td>
+                                <select id="expertise" size="4">
+                                    <option>Information Technology - Software</option>
+                                    <option>Information Technology - Hardware</option>
+                                    <option>Telecommunications</option>
+                                    <option>Human Resources</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="colorMeBlue">
+                            <td>Address: </td>
+                            <td><input type="text" id="address"></td>
+                        </tr>
+                        <tr>
+                            <td>City: </td>
+                            <td>
+                                <select id="cities">
+                                    <option>Bengaluru</option>
+                                    <option>Chennai</option>
+                                    <option>Hyderabad</option>
+                                    <option>Delhi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State: </td>
+                            <td>
+                                <select id="state">
+                                    <option>Karnataka</option>
+                                    <option>TamilNadu</option>
+                                    <option>Telangana</option>
+                                    <option>Delhi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender: </td>
+                            <td>
+                                <input type="radio" id="gender" name="gender">Male
+                                <input type="radio" id="gender" name="gender">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td><input type="email" id="email_id"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div align="center">
+                                    <input type="submit" value="submit">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+
+        </form>
+    </fieldset>
+    <div id="Print"></div>
+    </center>
+</body>
+
+</html>
