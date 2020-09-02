@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMSwebapi", "BMSwebapi\BMSwebapi.csproj", "{13D0EDA1-4D63-4C44-892C-79CF9E1A4B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMSwebapiTest", "BMSwebapiTest\BMSwebapiTest.csproj", "{FECA9C9A-EBD3-40FD-941D-4601B38CB35F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13D0EDA1-4D63-4C44-892C-79CF9E1A4B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D0EDA1-4D63-4C44-892C-79CF9E1A4B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D0EDA1-4D63-4C44-892C-79CF9E1A4B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D0EDA1-4D63-4C44-892C-79CF9E1A4B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FECA9C9A-EBD3-40FD-941D-4601B38CB35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FECA9C9A-EBD3-40FD-941D-4601B38CB35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FECA9C9A-EBD3-40FD-941D-4601B38CB35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FECA9C9A-EBD3-40FD-941D-4601B38CB35F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDD8D396-994A-4A21-AAC5-42FEEC02FE78}
+	EndGlobalSection
+EndGlobal
